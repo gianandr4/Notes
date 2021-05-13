@@ -30,6 +30,26 @@ def reader(conn, table, filter=''):
         out.append(rowlist)
     return out
 
+   # def deleter(conn,table='T_Items', filter = ''):
+   #      cursor_read=conn.cursor()
+   #      cursor_delete=conn.cursor()
+   #
+   #      # READ
+   #      print('THE FOLLOWING RECORDS WILL BE DELETED')
+   #      select_record = '''SELECT * FROM ''' + table + ' '+ filter+ ' ORDER BY Item_ID'
+   #      cursor_read.execute(select_record)
+   #      for i in cursor_read:
+   #          print(i[-1],i[0], i[-4])
+   #
+   #      sure=input('Type yes to delete ')
+   #      if sure.lower()=='yes':
+   #          print('deleting')
+   #          delete_query = '''DELETE FROM '''+table+' '+filter
+   #          print(delete_query)
+   #          cursor_delete.execute(delete_query )
+   #          print('executed')
+   #          conn.commit()
+   #          print('comitted')
 
 # Connect
 conn = connect()
