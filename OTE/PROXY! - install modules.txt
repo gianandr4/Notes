@@ -1,0 +1,4 @@
+RUN ANACONDA PROMPT AS ADMINISTRATOR
+
+
+pip --proxy http://proxy.otenet.gr:8080 install 'module'
