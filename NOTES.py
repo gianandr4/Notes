@@ -17,6 +17,7 @@ with open("C:/test/output (1).csv","rU",encoding="utf-16") as f:
 # WRITE TO NOTEPAD
 file= open(name,"w+",encoding='utf8')
 file.write("..........\n")
+file.close()
 
 #####################################################
 #OUTLOOK MAILS

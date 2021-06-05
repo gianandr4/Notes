@@ -33,6 +33,9 @@ os.listdir(path)
 # Create a directory named path with numeric mode mode.
 os.mkdir(path)
 
+# Remove directory
+os.rmdir(path)
+
 # Recursive directory creation function.
 os.makedirs(path)
 
@@ -51,4 +54,5 @@ os.rmdir(path)
 # Change working directory
 os.chdir(path)
 
-
+# Get current working directory
+os.getcwd()
