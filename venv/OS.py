@@ -47,3 +47,8 @@ os.rename(src, dst)
 
 # Remove (delete) the directory path.
 os.rmdir(path)
+
+# Change working directory
+os.chdir(path)
+
+
