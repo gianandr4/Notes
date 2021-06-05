@@ -2,7 +2,7 @@ This project contains code fragments for quick refference in the future
 
 1_DATABASES  - Connection to database and CRUD operations
 
-2_OUTLOOK
+2_OUTLOOK  -
 
 PANDAS
 
@@ -13,4 +13,6 @@ BEAUTIFULSOUP
 IMAGE_PDF
 
 SELENIUM
+
+FLASK
 
