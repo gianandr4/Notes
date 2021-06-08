@@ -22,6 +22,20 @@ def close(client):
     client.close()
     return
 
+##########################################
+
+import custom_paramiko as cp
+
+client = cp.connect(server_ip='',server_port='',user='',pswd='')
+
+connection = cp.shell(client)
+
+cp.cmd(connection=connection,sec=10, command='cd ....')
+
+cp.cmd(connection=connection,sec=10, command='ls')
+#read
+
+
 
 
 
@@ -43,22 +57,22 @@ def close(client):
 #interface='TenGigE0/1/0/7.1204'
 #desc='|ELINE|21A1041233|GERMANOS_PL.EIRHNHS-AXARNON_1ST,NO_NTE_VLAN1204|'
 #
+
 #
+# ssh=connect(hostname,port,username,password)
+# shell=shell(ssh)
 #
-#ssh=connect(hostname,port,username,password)
-#shell=shell(ssh)
-#
-#xx=cmd(shell, 'show run int ' +interface,2)
-#print(xx.decode())
-#yy=cmd(shell, 'conf terminal')
-#zz=cmd(shell, 'interface '+interface)
-#aa=cmd(shell, 'description '+desc)
-#ss=cmd(shell, 'commit')
-#dd=cmd(shell, 'end')
-#ww=cmd(shell, 'show run int ' +interface,2)
-#print(ww.decode())
-#
-#
+# xx=cmd(shell, 'show run int ' +interface,2)
+# print(xx.decode())
+# yy=cmd(shell, 'conf terminal')
+# zz=cmd(shell, 'interface '+interface)
+# aa=cmd(shell, 'description '+desc)
+# ss=cmd(shell, 'commit')
+# dd=cmd(shell, 'end')
+# ww=cmd(shell, 'show run int ' +interface,2)
+# print(ww.decode())
+
+
 #
 #
 #

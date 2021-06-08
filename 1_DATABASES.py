@@ -10,6 +10,9 @@ def connect():
     print('Connection successful')
     return conn
 
+item = {'name':'asda'
+        'gold':'1000'
+}
 
 def writer(conn, item_dict, table):
     cursor = conn.cursor()
@@ -52,7 +55,9 @@ def reader(conn, table, filter=''):
    #          print('comitted')
 
 # Connect
-conn = connect()
+import 1_DATABASES AS A
+
+conn = A.connect()
 
 # Write from dict
 writer(conn=conn, table='google_authors', item_dict=author_dict)
