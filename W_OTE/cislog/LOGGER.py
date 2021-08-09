@@ -1,12 +1,11 @@
 import tkinter as tk
 import os
 #import ssh2
-import socket
+from socket import socket
 from ssh2.session import Session
 import re
 import pandas as pd
 from datetime import datetime
-import sys
 
 paths=("""
 Root path:

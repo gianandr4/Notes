@@ -1,9 +1,7 @@
-import os
 #import ssh2
-import socket
+from socket import socket
 from ssh2.session import Session
 import re
-from datetime import datetime
 import sys
 
 

@@ -6,7 +6,6 @@ This project contains code fragments for quick refference in the future
 
 3_OS
 
-
 PANDAS
 
 REQUESTS
@@ -18,4 +17,6 @@ IMAGE_PDF
 SELENIUM
 
 FLASK
+
+
 

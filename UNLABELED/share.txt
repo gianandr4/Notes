@@ -1,0 +1,37 @@
+# A WAYS TO FIND THE COMMON VLANS BETWEEN TWO ROUTERS AND
+# FIND IF THERE ARE MULTIPLE COMMON VLANS IN SUCCESSION
+
+import random
+# CREATE TWO LISTS WITH UNIQUE NUMBERS FROM 1000 TO 4096
+res1=[]
+res2=[]
+for i in range(1000,4096):
+    if random.randint(0,1)==1:
+        res1.append(i)
+    if random.randint(0, 1)==1:
+        res2.append(i)
+
+# CREATE A LIST WITH THE COMMON VALUES
+common=[]
+for i in res1:
+    if i in res2:
+        common.append(i)
+
+# MAKE A LIST OF THE ELEMENTS THAT ARE SUBSEQUENT
+# THE LIST IS 2D AND SHOWS THE START AND END NUMBER
+lengths = []
+memory = 0
+cnt = 0
+common.sort()
+for i in common:
+    if i == memory+1:
+        cnt += 1
+        reset = False
+    else:
+        reset = True
+    if reset:
+        if cnt > 1:
+            lengths.append([cnt,str(i-cnt)+'-'+str(i)])
+        cnt=0
+    memory=i
+print(lengths)
